@@ -8,9 +8,9 @@ function App() {
 	<div>
 		<header><h1>Temperature Analysis</h1></header>
 	</div>
-    <div class="col-md-2">
+     <div class="col-md-2"> 
 	    
-		</div>
+		 </div>
     <br></br>
 	<br></br>
       
@@ -27,7 +27,7 @@ function App() {
 				<input class="sub" type="submit" value="Send"/>
 			</form>
 			
-		</div>
+		</div> 
 
 		<div>
 			<h2>Bar chart</h2>

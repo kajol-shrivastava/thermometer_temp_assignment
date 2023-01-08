@@ -5,7 +5,7 @@ const fs = require('fs');
 const getTemp=async function(req,res){
     try{
         //let data =await tempModel.find().limit
-        const data=await tempModel.find()
+        const data=await tempModel.find().limit(12)
         res.status(200).send({status:true,data:data})
 
 

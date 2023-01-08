@@ -3,9 +3,15 @@ const { default: mongoose } = require("mongoose");
 const route = require("./routes/route.js");
 mongoose.set('strictQuery', true);
 const upload=require("express-fileupload")
-
-
+const cors=require("cors")
 const app=express()
+
+app.use(cors({
+  origin: '*'
+}));
+
+
+
 
 app.use(express.json()); // tells the system that you want json to be used
 app.use(upload())
