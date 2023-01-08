@@ -1,17 +1,16 @@
 import react from "react"
+import axios from "axios"
 
 const BarChart=function (){
-    // const getCustomersData = () => {
-    //     axios
-    //     .get("localhost:5000/temp")
-    //     .then(data => console.log(data.data))
-    //     .catch(error => console.log(error));
-    //     };
+    const getData = async() => {
+        let  data=await axios.get("http://localhost:5000/temp")
+        console.log(data)
+        };
     //    getCustomersData();
     return (
         <div>
             
-            <input class="sub" type="submit" value="show Chart" />
+            <input class="sub" type="submit" value="show Chart" onClick={()=>getData()}/>
 
         </div>
     )
