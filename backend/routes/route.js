@@ -1,5 +1,4 @@
 const express=require("express")
-const formidable = require('formidable');
 const { uploadfile,dBinsert, readFile, getTemp}=require("../controller/temperatureController")
 const path = require('path');
 const fs = require("fs");
