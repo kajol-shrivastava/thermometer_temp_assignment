@@ -48,10 +48,10 @@ const dBinsert= async function(path,res){
     try{
         console.log(path)
         
-        let cityData = fs.readFileSync(path);  
-        let cities = JSON.parse(cityData);
-        console.log(cities)
-        const data=await tempModel.insertMany(cities)
+        let Data = fs.readFileSync(path);  
+        let records = JSON.parse(Data);
+        console.log(records)
+        const data=await tempModel.insertMany(records)
         console.log(data)
         res.send("uploaded files")
 
